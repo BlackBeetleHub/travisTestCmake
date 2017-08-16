@@ -11,7 +11,8 @@ addons:
       packages:
         - cmake-data
         - cmake
+        - make
 
 script:
   # Link gcc-6 and g++-6 to their standard commands
-  - cmake --buildcmake-build-debug --target word_analys -- -j 1
+  - cmake --build cmake-build-debug --target word_analys
