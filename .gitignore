@@ -48,3 +48,5 @@ CTestTestfile.cmake
 .idea/travisTestCmake.iml
 .idea/workspace.xml
 cmake-build-debug/
+.idea/.name
+gg/
