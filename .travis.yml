@@ -15,4 +15,7 @@ addons:
 
 script:
   # Link gcc-6 and g++-6 to their standard commands
-  - cmake --build cmake-build-debug --target word_analys
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cmake --build .
