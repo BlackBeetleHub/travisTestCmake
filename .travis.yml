@@ -1,0 +1,17 @@
+language: cpp
+
+compiler:
+  - clang
+  - gcc
+
+addons:
+    apt:
+      sources:
+        - george-edison55-precise-backports
+      packages:
+        - cmake-data
+        - cmake
+
+script:
+  # Link gcc-6 and g++-6 to their standard commands
+  - cmake --buildcmake-build-debug --target word_analys -- -j 1
